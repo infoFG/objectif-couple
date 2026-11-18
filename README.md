@@ -22,3 +22,9 @@ Ressources : `interface/include/stylesheet.css` + images `interface/image/`.
 
 - Le formulaire `formulaire/` poste vers `?action=send` (fonctionnalité PHP) — non fonctionnel en statique.
 - Liens morts du site original conservés tels quels (ex. serge-tremblay, 005-sortir-seul).
+
+## Site en ligne
+
+Consultable sur GitHub Pages : https://infofg.github.io/objectif-couple/
+
+*Déployé le 2026-11-17. Encodage converti en UTF-8.*
