@@ -34,10 +34,7 @@ body {
 }
 
 /* ---------- Header ---------- */
-.site-header {
-  background: var(--navy);
-  color: #fff;
-}
+.site-header { background: var(--navy); color: #fff; }
 .site-header__top {
   display: flex;
   align-items: center;
@@ -46,40 +43,17 @@ body {
   margin: 0 auto;
   padding: 14px 20px;
 }
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  text-decoration: none;
-  color: #fff;
-}
+.brand { display: flex; align-items: center; text-decoration: none; color: #fff; }
 .brand__logo {
   height: 54px;
   width: auto;
-  border-radius: 6px;
+  max-width: 100%;
   display: block;
-}
-.brand__text { line-height: 1.25; }
-.brand__name {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.4rem;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-  margin: 0;
-}
-.brand__tagline {
-  font-size: 0.82rem;
-  color: #d8e4ea;
-  margin: 0;
 }
 
 /* ---------- Navigation ---------- */
 .nav { background: var(--navy-dark); }
-.nav__inner {
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 0 12px;
-}
+.nav__inner { max-width: var(--maxw); margin: 0 auto; padding: 0 12px; }
 .nav__toggle {
   display: none;
   background: none;
@@ -201,11 +175,7 @@ li { margin-bottom: 0.35em; }
 
 /* ---------- Testimonials ---------- */
 .testimonial { margin-bottom: 22px; }
-.testimonial__name {
-  font-weight: 700;
-  color: var(--navy);
-  margin-bottom: 4px;
-}
+.testimonial__name { font-weight: 700; color: var(--navy); margin-bottom: 4px; }
 
 /* ---------- FAQ ---------- */
 .faq-item { margin-bottom: 16px; }
@@ -299,6 +269,7 @@ table.sitemap td, table.sitemap th {
 /* ---------- Responsive ---------- */
 @media (max-width: 760px) {
   .site-header__top { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .brand__logo { height: auto; width: 100%; max-width: 320px; }
   .nav__toggle { display: block; }
   .nav__list { display: none; flex-direction: column; }
   .nav__list.is-open { display: flex; }
