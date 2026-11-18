@@ -1,30 +1,32 @@
 # objectif-couple
 
-Copie statique du site **objectif-couple.com** — Centre de consultation conjugale du psychologue Dr André Surprenant.
+Site du **centre de consultation conjugale Objectif-Couple** — psychologue Dr André Surprenant.
 
-## Provenance
-
-- **Source :** https://objectif-couple.com (site copié le 2026-11-17)
-- **Auteur original :** francismachabee.com
-- **Copyright :** Objectif-couple.com
-
-## Structure
-
-Le site original est servi en PHP. Pour l'héberger en site statique (GitHub Pages), les fichiers `.php` (qui contenaient du HTML rendu) ont été renommés en `.html` et les liens internes ajustés en conséquence.
-
-Pages (12 sections) :
-- accueil (racine → redirige vers /accueil/)
-- a-propos, psychologue, service-de-consultation, formation, texte-thematique, temoignage, FAQ, formulaire, contact, plan-du-site, entrevue par video
-
-Ressources : `interface/include/stylesheet.css` + images `interface/image/`.
-
-## Notes
-
-- Le formulaire `formulaire/` poste vers `?action=send` (fonctionnalité PHP) — non fonctionnel en statique.
-- Liens morts du site original conservés tels quels (ex. serge-tremblay, 005-sortir-seul).
+Refonte moderne du site original objectif-couple.com (HTML5 responsive, CSS, SEO, accessibilité).
 
 ## Site en ligne
 
-Consultable sur GitHub Pages : https://infofg.github.io/objectif-couple/
+🔗 https://infofg.github.io/objectif-couple/
 
-*Déployé le 2026-11-17. Encodage converti en UTF-8.*
+## Structure
+
+- `css/style.css` — feuille de style moderne (responsive, accessible)
+- `js/main.js` — navigation mobile
+- `sitemap.xml`, `robots.txt` — référencement
+- 19 pages HTML5 sémantiques (accueil, à propos, psychologue, services, formation, textes thématiques, témoignages, FAQ, questionnaire, contact, plan du site, entrevue vidéo)
+
+## Provenance
+
+Copie du site original https://objectif-couple.com (2026-11-17), avec :
+
+1. **Design responsive** — remplacement des tables HTML 4.01 par du HTML5 sémantique + CSS flexbox/grid
+2. **Thème CSS** — suppression des images de mise en page au profit du CSS
+3. **Navigation unifiée** — menu généré de façon cohérente sur toutes les pages
+4. **Formulaire fonctionnel** — le questionnaire compose un courriel (mailto) plutôt que de poster vers un script PHP mort
+5. **SEO** — titres et descriptions par page, données structurées schema.org (Psychologist), sitemap, canonical
+6. **Accessibilité** — skip-link, focus visible, aria-current, lang fr, contrastes
+
+## Notes
+
+- Le formulaire utilise `mailto:` (ouvre le client courriel du visiteur). Pour une soumission serveur (sans client courriel), brancher un service comme Formspree ou Netlify Forms.
+- « Thérapie individuelle » contient un texte à écrire (laissé tel quel depuis l'original).
